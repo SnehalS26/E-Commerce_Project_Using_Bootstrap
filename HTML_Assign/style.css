@@ -1,0 +1,91 @@
+body {
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color:#79a8a9;
+}
+.navbar {
+    background-color: #CEBCCE;
+}
+a.nav-link
+{
+    color:black;
+}
+#carouselExampleCaptions
+{
+    position:relative;
+        top:100px;
+}
+.carousel-inner
+{
+    height:700px;
+}
+#productlist {
+    position: relative;
+    top: 91px;
+}
+#footer {
+    position: relative;
+    top: 380px;
+    background-color: #ADAAAD;
+    height: 200px;
+}
+#footer ul{
+    list-style:none;
+}
+#footer ul li{
+    font-weight:300;
+    font-size:18px;
+}
+#footer ul li a{
+    text-decoration:none;
+}
+#footer ul li a:hover{
+    text-decoration:underline
+}
+    #footer .row {
+        position: relative;
+        top: 40px;
+    }
+.fa-facebook {
+    color: #104AE7;
+}
+.fa-twitter {
+    color: #25F3F6;
+}
+.fa-whatsapp{
+    color:green;
+}
+.fa-instagram {
+    color: #DA21C1;
+}
+#cart{
+    height:396px;
+}
+@media screen and (min-width:320px) and (max-width:680px)
+{
+    #productlist{
+        top:-433px;
+    }
+    #footer{
+        height:544px;
+        top:0px;
+    }
+    #card{
+        height:496px;
+    }
+}
+@media screen and (min-width:700px) and (max-width:1440px) {
+    #productlist {
+        top: -181px;
+    }
+    #card {
+        height: 458px;
+    }
+    #footer {
+        height: 497px;
+        top: 0px;
+    }
+}
+

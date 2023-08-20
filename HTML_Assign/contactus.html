@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title></title>
+    <style>
+        #query{
+            position : relative;
+            top: 80px;
+        }
+        @media screen and (min-width:320px) and (max-width:680px) {
+            #carouselExampleCaptions {
+                position: relative;
+                top: 60px;
+                height: 261px;
+            }
+            .form-floating {
+                position: relative;
+                width: 41%;
+                height: 53px;
+            }
+            .map {
+                width: 123px;
+                height: 140px;
+            }
+            #footer {
+                height: 542px;
+                top: 131px;
+            }
+        }
+
+        @media screen and (min-width:700px) and (max-width:1440px) {
+            .map {
+                width: 350px;
+                height: 250px;
+            }
+            #footer {
+                height: 542px;
+                top: 131px;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: #79a8a9">
+
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+            <img src="logo.jfif" width="75" title="Myntra" />
+            <a class="navbar-brand" href="menu.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="banner1.jfif" class="d-block w-100" alt="Banner1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="banner2.jfif" class="d-block w-100" alt="Banner2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="banner3.jfif" class="d-block w-100" alt="Banner3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="banner4.jfif" class="d-block w-100" alt="Banner3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section id="query">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <h5>Contact us</h5>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Contact No</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Comments</label>
+                    </div>
+                    <br />
+                    <div class="form-floating mb-3">
+                        <input type="button" value="submit" class="btn btn-outline-primary" />
+                    </div>
+                    <div class="mb-3">
+                        <address>
+                            Myntra office
+                            JQWC+RVJ, Central Excise Staff Colony, Sector No. 28, Pradhikaran, Nigdi, Pimpri-Chinchwad, Maharashtra 411044
+                        </address>
+                        <h6>
+                            Email:
+                            <br />
+                            Contact:
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.3763627488247!2d73.76955927494069!3d18.647099682471186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9ad3625771d%3A0x1a6c6c151eb3b13d!2sMyntra%20office!5e0!3m2!1sen!2sin!4v1692520748458!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-ms-6">
+                    <h5>Get in touch</h5>
+                    <ul>
+                        <li>
+                            <address>JQWC+RVJ, Central Excise Staff Colony, Sector No. 28, Pradhikaran, Nigdi, Pimpri-Chinchwad, Maharashtra 411044</address>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-ms-6">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li>
+                            <a href="menu.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="contactus.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="aboutus.html">About</a>
+                        </li>
+                        <li>
+                            <a href="service.html">Services</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-ms-6">
+                    <h5>Our Presences.</h5>
+                    <ul>
+                        <li>
+                            <i class="fa fa-facebook" aria-hidden="true"></i> Facebook
+                        </li>
+                        <li>
+                            <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
+                        </li>
+                        <li>
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i> Whatsapp
+                        </li>
+                        <li>
+                            <i class="fa fa-instagram" aria-hidden="true"></i> Instagram
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-ms-6">
+                    <h5>Privacy</h5>
+
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
